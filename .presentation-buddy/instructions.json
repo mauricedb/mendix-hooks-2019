@@ -1,0 +1,244 @@
+[
+  {
+    "type": "openFile",
+    "path": "src/window-size.js"
+  },
+  {
+    "type": "goto",
+    "line": 60
+  },
+  {
+    "type": "typeText",
+    "text": ["// "]
+  },
+  {
+    "type": "command",
+    "command": "cursorBottom"
+  },
+  {
+    "type": "typeText",
+    "text": ["", "export default function HookedWindowSize() {", "", "}", ""]
+  },
+  {
+    "type": "command",
+    "command": "cursorBottom"
+  },
+  {
+    "type": "goto",
+    "line": 30
+  },
+  {
+    "type": "command",
+    "command": "editor.action.smartSelect.expand"
+  },
+  {
+    "type": "command",
+    "command": "editor.action.clipboardCopyAction"
+  },
+  {
+    "type": "goto",
+    "line": 63
+  },
+  {
+    "type": "command",
+    "command": "editor.action.clipboardPasteAction"
+  },
+  {
+    "type": "goto",
+    "line": 64,
+    "column": 3
+  },
+  {
+    "type": "command",
+    "command": "editor.action.smartSelect.expand"
+  },
+  {
+    "type": "command",
+    "command": "editor.action.smartSelect.expand"
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "const [height, setHeight] = React.useState(400);",
+      "  const [width, setWidth] = React.useState(800);"
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 75,
+    "column": 21
+  },
+  {
+    "type": "command",
+    "command": "editor.action.smartSelect.expand"
+  },
+  {
+    "type": "command",
+    "command": "editor.action.smartSelect.expand"
+  },
+  {
+    "type": "typeText",
+    "text": ["e => setHeight(e.target.value)"]
+  },
+  {
+    "type": "goto",
+    "line": 84,
+    "column": 21
+  },
+  {
+    "type": "command",
+    "command": "editor.action.smartSelect.expand"
+  },
+  {
+    "type": "command",
+    "command": "editor.action.smartSelect.expand"
+  },
+  {
+    "type": "typeText",
+    "text": ["e => setWidth(e.target.value)"]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
+
+  {
+    "type": "openFile",
+    "path": "src/window-size.js"
+  },
+  {
+    "type": "goto",
+    "line": 65
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      "  React.useEffect(() => {",
+      "    const getWindowSize = () => {",
+      "      setHeight(window.outerHeight);",
+      "      setWidth(window.outerWidth);",
+      "    };",
+      "",
+      "    window.addEventListener('resize', getWindowSize);",
+      "",
+      "    return () => window.removeEventListener('resize', getWindowSize);",
+      "  }, []);",
+      ""
+    ]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
+
+  {
+    "type": "openFile",
+    "path": "src/window-size.js"
+  },
+  {
+    "type": "goto",
+    "line": 63
+  },
+  {
+    "type": "command",
+    "command": "cursorDownSelect"
+  },
+  {
+    "type": "command",
+    "command": "cursorDownSelect"
+  },
+  {
+    "type": "command",
+    "command": "cursorDownSelect"
+  },
+  {
+    "type": "command",
+    "command": "cursorDownSelect"
+  },
+  {
+    "type": "command",
+    "command": "cursorDownSelect"
+  },
+  {
+    "type": "command",
+    "command": "cursorDownSelect"
+  },
+  {
+    "type": "command",
+    "command": "cursorDownSelect"
+  },
+  {
+    "type": "command",
+    "command": "cursorDownSelect"
+  },
+  {
+    "type": "command",
+    "command": "cursorDownSelect"
+  },
+  {
+    "type": "command",
+    "command": "cursorDownSelect"
+  },
+  {
+    "type": "command",
+    "command": "cursorDownSelect"
+  },
+  {
+    "type": "command",
+    "command": "cursorDownSelect"
+  },
+  {
+    "type": "command",
+    "command": "cursorDownSelect"
+  },
+
+  {
+    "type": "command",
+    "command": "editor.action.clipboardCutAction"
+  },
+
+  {
+    "type": "goto",
+    "line": 61
+  },
+  {
+    "type": "typeText",
+    "text": ["", "function useWindowSize() {", "", "}", ""]
+  },
+  {
+    "type": "goto",
+    "line": 63
+  },
+  {
+    "type": "command",
+    "command": "editor.action.clipboardPasteAction"
+  },
+  {
+    "type": "typeText",
+    "text": ["", "  return { height, width, setHeight, setWidth };"]
+  },
+  {
+    "type": "goto",
+    "line": 81
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "  const { height, width, setHeight, setWidth } = useWindowSize();",
+      ""
+    ]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  }
+]
