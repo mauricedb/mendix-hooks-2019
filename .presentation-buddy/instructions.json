@@ -57,6 +57,10 @@
     "command": "editor.action.smartSelect.expand"
   },
   {
+    "type": "wait",
+    "delay": 10000
+  },
+  {
     "type": "typeText",
     "text": [
       "const [height, setHeight] = React.useState(400);",
@@ -75,6 +79,10 @@
   {
     "type": "command",
     "command": "editor.action.smartSelect.expand"
+  },
+  {
+    "type": "wait",
+    "delay": 10000
   },
   {
     "type": "typeText",
@@ -125,6 +133,7 @@
       "    };",
       "",
       "    window.addEventListener('resize', getWindowSize);",
+      "    getWindowSize()",
       "",
       "    return () => window.removeEventListener('resize', getWindowSize);",
       "  }, []);",
@@ -147,6 +156,10 @@
   {
     "type": "goto",
     "line": 63
+  },
+  {
+    "type": "command",
+    "command": "cursorDownSelect"
   },
   {
     "type": "command",
@@ -228,7 +241,7 @@
   },
   {
     "type": "goto",
-    "line": 81
+    "line": 82
   },
   {
     "type": "typeText",
