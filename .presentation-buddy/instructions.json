@@ -82,7 +82,7 @@
   },
   {
     "type": "wait",
-    "delay": 10000
+    "delay": 5000
   },
   {
     "type": "typeText",
